@@ -1,0 +1,23 @@
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    background: #FFF4F1;
+    height: 25rem;
+}
+.hero-intro h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#p{
+    margin-top: 1rem;
+}
+.hero-image{
+    display: flex;
+}
+.pizza1{
+    width: 400px;
+}
+.pizza2{
+    width: 300px;
+}
