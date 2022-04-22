@@ -1,12 +1,35 @@
 import React from "react";
-import Product from "../components/Product/product";
 
-const products = () => {
+import "../product.css";
+
+const Product = () => {
     return (
-        <section id="product-page">
-            <Product />
-        </section>
+        <>
+            <header>
+                <h2>Our Products</h2>
+            </header>
+            <section className="product__listing">
+                <div className="product__listing-item">
+                    <img
+                        src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
+                        alt=""
+                    />
+                </div>
+                <div className="product__listing-item">
+                    <img
+                        src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
+                        alt=""
+                    />
+                </div>
+                <div className="product__listing-item">
+                    <img
+                        src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
+                        alt=""
+                    />
+                </div>
+            </section>
+        </>
     );
 };
 
-export default products;
+export default Product;
