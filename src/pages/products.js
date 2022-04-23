@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "../styles/product.css";
+import "../styles/products.css";
 
 const Product = () => {
     const [menu, setMenu] = useState([]);
