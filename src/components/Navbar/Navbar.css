@@ -1,5 +1,5 @@
 nav {
-  background: #fff4f1;
+  background: var(--secondary-color);
   height: 70px;
   width: 100%;
   display: flex;
@@ -7,12 +7,18 @@ nav {
   position: fixed;
   z-index: 9;
 }
+
+nav.shadowed{
+    box-shadow: 2px 0 4px rgba(0,0,0,0.2);
+}
+
 nav label {
   line-height: 70px;
   font-size: 1.6rem;
   padding-left: 3rem;
   color: var(--main-color);
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -123,7 +129,7 @@ nav ul li .active {
   }
   .mobile-navigation {
     display: block;
-    padding-top: 5rem;
+    padding-top: 1rem;
     margin-top: 5rem;
     background: var(--main-color);
     height: 20rem;
@@ -142,7 +148,7 @@ nav ul li .active {
   .mobile-navigation .link {
     color: var(--secondary-color);
     text-decoration: none;
-    margin: 1rem;
-    font-size: 2rem;
+    margin: 0.5rem;
+    font-size: 2.4rem;
   }
 }
