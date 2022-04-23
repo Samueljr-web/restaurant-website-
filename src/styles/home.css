@@ -66,6 +66,7 @@
 
     .home-page{
         padding: 3rem 1rem;
+        overflow: hidden;
     }
     
     .hero-section{
@@ -74,8 +75,8 @@
         padding: 2rem 1rem;
     }
     .hero-image img{
-        width: 350px;
-        height: 350px;
+        width: 330px;
+        height: 330px;
         transition: .3s;
     }
     .specialoffers{

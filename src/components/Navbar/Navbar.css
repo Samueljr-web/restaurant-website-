@@ -4,7 +4,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   z-index: 9;
 }
 nav label {
@@ -39,6 +39,8 @@ nav ul li .active {
 }
 .menu {
   display: none;
+  outline: none;
+  border: none;
 }
 .menubar {
   position: absolute;
@@ -92,13 +94,11 @@ nav ul li .active {
 }
 
 .close-icon {
-  height: 1px;
-  width: 35px;
+  height: 2px;
+  width: 30px;
   background-color: var(--main-color);
   display: block;
-  margin: 1px;
   cursor: pointer;
-  padding: 1px;
   border-radius: 20px;
 }
 
