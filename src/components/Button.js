@@ -4,7 +4,7 @@ import "../styles/button.css";
 const Button = ({ name }) => {
   return (
     <div>
-      <button className="button curtaindown">{name}</button>
+      <button className="button slideleft">{name}</button>
     </div>
   );
 };
