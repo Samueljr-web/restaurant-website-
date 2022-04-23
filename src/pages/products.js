@@ -7,7 +7,7 @@ const Product = () => {
     useEffect(() => {
         const options = {
             method: "GET",
-            params: { limit: "24", start: "0" },
+            params: { limit: "26", start: "0" },
             headers: {
                 "X-RapidAPI-Host": "yummly2.p.rapidapi.com",
                 "X-RapidAPI-Key":
@@ -16,9 +16,12 @@ const Product = () => {
         };
 
         const fetchFood = async () => {
-            fetch("https://yummly2.p.rapidapi.com/feeds/list", options)
-                .then((res) => res.json())
-                .then((data) => setMenu(data.feed));
+            const res = await fetch(
+                "https://yummly2.p.rapidapi.com/feeds/list",
+                options
+            );
+            const data = await res.json();
+            setMenu(data.feed);
         };
         fetchFood();
     }, []);
@@ -49,17 +52,42 @@ const Product = () => {
                                     <h3>
                                         {displayName
                                             ? displayName
-                                            : profiles[0].displayName}
+                                            : display.title}
                                     </h3>
-                                    <h4>32.44$</h4>
-                                    <p>{flag}</p>
+                                    <h4>
+                                        ₦{" "}
+                                        {Math.round(
+                                            (Math.random() * 4000) / 1000
+                                        ) *
+                                            1000 +
+                                            1500}
+                                    </h4>
+                                    <p>
+                                        {flag
+                                            ? flag.replace(
+                                                  "Yummly",
+                                                  "Food City"
+                                              )
+                                            : "Recommended by Food City"}
+                                    </p>
                                 </div>
                             </div>
                         );
                     })}
                 </section>
             ) : (
-                "loading"
+                <div className="spinner-container">
+                    <svg className="spinner" viewBox="0 0 50 50">
+                        <circle
+                            className="path"
+                            cx="25"
+                            cy="25"
+                            r="20"
+                            fill="none"
+                            strokeWidth="5"
+                        ></circle>
+                    </svg>
+                </div>
             )}
         </section>
     );

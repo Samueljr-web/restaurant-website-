@@ -1,11 +1,13 @@
 #product-page {
     padding: 2rem 4rem;
+    padding-top: 5rem;
 }
 header {
     text-align: center;
 }
 header h2 {
     font-size: 2rem;
+    padding-bottom: 0.5rem;
     display: inline-block;
     border-bottom: 3px solid var(--main-color);
 }
@@ -50,11 +52,11 @@ header h2 {
     background-color: white;
 }
 .listing__Item-info h3 {
-    font-size: 0.9rem;
+    font-size: 0.68rem;
     width: 50%;
 }
 .listing__Item-info h4 {
-    font-size: 0.94rem;
+    font-size: 0.8rem;
     color: var(--main-color);
     width: 50%;
     text-align: right;
@@ -62,6 +64,8 @@ header h2 {
 .listing__Item-info p {
     font-size: 0.65rem;
     width: 70%;
+    margin-top: 1rem;
+
     color: rgb(100, 100, 100);
 }
 
@@ -71,7 +75,51 @@ header h2 {
     }
 }
 @media screen and (max-width: 600px) {
+    header h2 {
+        font-size: 1.5rem;
+    }
     .product__listing .product__listing-item {
         width: 100%;
+        margin: 1rem 0rem;
+    }
+}
+.spinner-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+.spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+.spinner .path {
+    stroke: var(--main-color);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
     }
 }
