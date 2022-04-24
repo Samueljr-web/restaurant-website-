@@ -5,7 +5,7 @@ const ContactInput = ({contactInput}) => {
   return (
     <div class="form-group">
       <label for={label}>{title}</label>
-      <input type={type} />
+      <input  className="input" type={type} />
     </div>
   );
 }
