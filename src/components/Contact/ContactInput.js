@@ -3,8 +3,8 @@ import React from 'react'
 const ContactInput = ({contactInput}) => {
     const {label, title, type}= contactInput
   return (
-    <div class="form-group">
-      <label for={label}>{title}</label>
+    <div className="form-group">
+      <label htmlFor={label}>{title}</label>
       <input  className="input" type={type} />
     </div>
   );

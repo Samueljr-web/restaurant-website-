@@ -19,11 +19,11 @@ const contact = () => {
             like to share with us? Feel free to contact us!
           </p>
           <form action="">
-            {contactInput.map((Input) => (
-              <ContactInput contactInput={Input} />
+            {contactInput.map((Input,index) => (
+              <ContactInput key={index} contactInput={Input} />
             ))}
-            <div class="form-group">
-              <label for="message">Message</label>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
               <textarea></textarea>
             </div>
             <Button name={"Send Message"} />
@@ -40,13 +40,13 @@ const contact = () => {
         </div>
       </div>
       <div className="restaurant-info-container">
-        {contactInfo.map((contact) => (
-          <ContactInfo contactInfo={contact} />
+        {contactInfo.map((contact, index) => (
+          <ContactInfo key={index} contactInfo={contact} />
         ))}
       </div>
       <div className="icon-container">
-        {icons.map((icon) => (
-          <Icon icon={icon} />
+        {icons.map((icon, index) => (
+          <Icon key={index} icon={icon} />
         ))}
       </div>
       <footer className="copyright">
