@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+:root{
+--main-color: #30CE8B;
+--primary-color:#7E7796;
+--secondary-color: #FFF5EC;
+}
 body {
   font-family: 'Poppins', sans-serif;
   background: #fff;
