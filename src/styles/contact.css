@@ -1,4 +1,4 @@
-.contact-wrapper{
+.contact-wrapper {
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
@@ -42,6 +42,7 @@ textarea {
   height: 100px;
   padding-left: 4px;
   padding-top: 2px;
+  border-color: var(--main-color);
 }
 form > div:last-child {
   display: flex;
@@ -87,6 +88,13 @@ ul {
 .social-icon > i {
   color: var(--main-color);
 }
+.input {
+  border: 1px solid var(--main-color);
+}
+
+ textarea:focus, input:focus{
+    outline: none;
+} 
 @media (min-width: 768px) {
   .contact-wrapper {
     display: flex;
