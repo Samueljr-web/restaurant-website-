@@ -1,6 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faFacebookF, faTwitter, faInstagram, faPinterestP} from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faPinterestP,
+} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
@@ -10,12 +15,11 @@ function Footer() {
     <div className="footer">
       <div className="container">
         <div className="top-part">
-
           <div className="row">
             <h2>Food City</h2>
             <p>Slogan Company</p>
           </div>
-          
+
           <div className="row">
             <h2>Services</h2>
             <ul>
@@ -55,15 +59,30 @@ function Footer() {
         </div>
 
         <div className="lower-part">
-            <div className="footer-socials">
-                <div className="footer-social-links"><Link to="/"><FontAwesomeIcon icon= {faFacebookF} /></Link></div>
-                <div className="footer-social-links"><Link to="/"><FontAwesomeIcon icon= {faTwitter} /></Link></div>
-                <div className="footer-social-links"><Link to="/"><FontAwesomeIcon icon= {faInstagram} /></Link></div>
-                <div className="footer-social-links"><Link to="/"><FontAwesomeIcon icon= {faPinterestP} /></Link></div>
+          <div className="footer-socials">
+            <div className="footer-social-links">
+              <Link to="/">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </Link>
             </div>
-            <small>©Copyright All rights reserved</small>
+            <div className="footer-social-links">
+              <Link to="/">
+                <FontAwesomeIcon icon={faTwitter} />
+              </Link>
+            </div>
+            <div className="footer-social-links">
+              <Link to="/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </Link>
+            </div>
+            <div className="footer-social-links">
+              <Link to="/">
+                <FontAwesomeIcon icon={faPinterestP} />
+              </Link>
+            </div>
+          </div>
+          <small>©Copyright All rights reserved</small>
         </div>
-
       </div>
     </div>
   );
