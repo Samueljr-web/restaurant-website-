@@ -14,8 +14,8 @@ nav.shadowed{
 
 nav label {
   line-height: 70px;
-  font-size: 1.8rem;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-family: 'PT Sans', sans-serif;
   padding-left: 2.5rem;
   color: var(--main-color);
 }
