@@ -36,6 +36,7 @@ input {
   outline: none;
   padding-left: 4px;
   padding-top: 2px;
+  border-radius: 3px;
 }
 textarea {
   outline: none;
@@ -72,16 +73,7 @@ ul {
   display: flex;
   justify-content: center;
 }
-.social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 6px;
-}
+
 .copyright {
   text-align: center;
 }
@@ -89,7 +81,7 @@ ul {
   color: var(--main-color);
 }
 .input {
-  border: 1px solid var(--main-color);
+  border: 1.5px solid var(--main-color);
 }
 
  textarea:focus, input:focus{

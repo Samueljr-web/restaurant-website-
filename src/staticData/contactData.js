@@ -1,12 +1,12 @@
 /** @format */
 
-export const icons = [
-  "fab fa-facebook-f",
-  "fab fa-twitter",
-  "fab fa-pinterest",
-  "fab fa-instagram",
-  "fab fa-whatsapp",
-];
+// export const icons = [
+//   "fab fa-facebook-f",
+//   "fab fa-twitter",
+//   "fab fa-pinterest",
+//   "fab fa-instagram",
+//   "fab fa-whatsapp",
+// ];
 
 export const contactInfo = [
   {

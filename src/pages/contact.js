@@ -3,7 +3,7 @@ import "../styles/contact.css";
 import Map from "../assets/map.PNG";
 import Button from "../components/Button";
 import Icon from "../components/Icon";
-import { contactInfo, contactInput, icons } from "../staticData/contactData";
+import { contactInfo, contactInput } from "../staticData/contactData";
 import ContactInfo from "../components/Contact/ContactInfo";
 import ContactInput from "../components/Contact/ContactInput";
 
@@ -19,7 +19,7 @@ const contact = () => {
             Feel free to contact us!
           </p>
           <form action="">
-            {contactInput.map((Input,index) => (
+            {contactInput.map((Input, index) => (
               <ContactInput key={index} contactInput={Input} />
             ))}
             <div className="form-group">
@@ -44,12 +44,6 @@ const contact = () => {
           <ContactInfo key={index} contactInfo={contact} />
         ))}
       </div>
-      <div className="icon-container">
-        {icons.map((icon, index) => (
-          <Icon key={index} icon={icon} />
-        ))}
-      </div>
-      <footer className="copyright">COPYRIGHT &copy; 2022 GROUP 29 </footer>
     </>
   );
 };
