@@ -20,8 +20,9 @@ function Home() {
             Discover Restaurant <br /> & Delicious Foods
           </motion.h2>
           <p>
-            lorem ipsum dolar sit amet lorem amet sit amet sit dolar concetua
-            <br /> dolar concetua t
+            Your gastronomical experience with us is our main priority. This is
+            why all of our recipes are always prepared with the freshest
+            ingredients available.
           </p>
           <Button name="Contact Us" />
         </div>
