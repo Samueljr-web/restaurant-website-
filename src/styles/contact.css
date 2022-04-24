@@ -43,12 +43,6 @@ textarea {
   padding-left: 4px;
   padding-top: 2px;
 }
-
-button:first-of-type {
-  margin-top: 17px;
-  text-transform: uppercase;
-  border: 3px solid black;
-}
 form > div:last-child {
   display: flex;
   justify-content: flex-end;
