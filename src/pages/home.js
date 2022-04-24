@@ -3,6 +3,7 @@ import images from "../components/images";
 import { motion } from "framer-motion";
 import Heroimage from "../assets/6.png";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 function Home() {
@@ -24,7 +25,9 @@ function Home() {
             why all of our recipes are always prepared with the freshest
             ingredients available.
           </p>
-          <Button name="Contact Us" />
+          <Link to="/contact">
+            <Button name="Contact Us" />
+          </Link>
         </div>
         <motion.div
           nitial={{ scale: 0 }}
