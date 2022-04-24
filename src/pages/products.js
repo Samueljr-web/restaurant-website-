@@ -54,12 +54,12 @@ const Product = () => {
                                     <h3>
                                         {displayName
                                             ? `${displayName.slice(0, 40)}${
-                                                  displayName.length > 40 &&
-                                                  "..."
+                                                  displayName.length > 40 ?
+                                                  "...":""
                                               }`
                                             : `${display.title.slice(0, 40)}${
-                                                  display.title.length > 40 &&
-                                                  "..."
+                                                  display.title.length > 40 ?
+                                                  "...":""
                                               }`}
                                     </h3>
                                     <h4>

@@ -1,0 +1,123 @@
+.contact-wrapper {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.contact-container {
+  padding: 20px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.form-title {
+  margin-bottom: 30px;
+}
+.form-title::after {
+  content: "";
+  width: 218px;
+  height: 3px;
+  display: block;
+  position: relative;
+  background-color: var(--main-color);
+  top: -2px;
+}
+.form-subheader {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+.address {
+  color: var(--primary-color);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+input {
+  height: 30px;
+  outline: none;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+textarea {
+  outline: none;
+  height: 100px;
+  padding-left: 4px;
+  padding-top: 2px;
+  border-color: var(--main-color);
+}
+form > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.find-us::after {
+  width: 117px;
+}
+ul {
+  padding-inline-start: 20px;
+}
+.map {
+  width: 96%;
+  min-width: 300px;
+  max-width: 485px;
+  margin-top: 20px;
+}
+.restaurant-info-container {
+  padding: 20px;
+  text-align: center;
+}
+.restaurant-info {
+  margin-bottom: 35px;
+}
+.icon-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px;
+}
+.copyright {
+  text-align: center;
+}
+.social-icon > i {
+  color: var(--main-color);
+}
+.input {
+  border: 1px solid var(--main-color);
+}
+
+ textarea:focus, input:focus{
+    outline: none;
+} 
+@media (min-width: 768px) {
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-container {
+    width: 35%;
+    margin: 0;
+    max-width: none;
+  }
+  .map {
+    max-width: none;
+  }
+  textarea {
+    height: 200px;
+  }
+  .form-group {
+    padding-bottom: 30px;
+  }
+  .restaurant-info-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

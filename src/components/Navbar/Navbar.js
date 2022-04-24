@@ -10,10 +10,18 @@ import "./Navbar.css";
 
 function Navbar() {
   const [IsOpen, setIsOpen] = useState(false);
-
+  const [nav, setnav] = useState(false);
+  const addShadow = () => {
+    if (window.scrollY >= 50) {
+      setnav(true);
+    } else {
+      setnav(false);
+    }
+  };
+  window.addEventListener("scroll", addShadow);
   return (
     <div>
-      <nav>
+      <nav className={nav ? "shadowed" : null}>
         <label>Food City</label>
         <ul>
           <li>
