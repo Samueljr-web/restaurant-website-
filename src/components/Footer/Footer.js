@@ -17,7 +17,7 @@ function Footer() {
         <div className="top-part">
           <div className="row">
             <h2>Food City</h2>
-            <p>Slogan Company</p>
+            <p>It Tastes better</p>
           </div>
 
           <div className="row">
