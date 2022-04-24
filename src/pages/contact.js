@@ -14,9 +14,9 @@ const contact = () => {
         <div className="contact-container">
           <h1 className="form-title">GET IN TOUCH</h1>
           <p className="form-subheader">
-            You have any questions? We would love to hear from you!
-            You have a piece of advice or a suggestion that you will
-            like to share with us? Feel free to contact us!
+            You have any questions? We would love to hear from you! You have a
+            piece of advice or a suggestion that you will like to share with us?
+            Feel free to contact us!
           </p>
           <form action="">
             {contactInput.map((Input) => (
@@ -49,9 +49,7 @@ const contact = () => {
           <Icon icon={icon} />
         ))}
       </div>
-      <footer className="copyright">
-        COPYRIGHT &copy; 2022 GROUP 29{" "}
-      </footer>
+      <footer className="copyright">COPYRIGHT &copy; 2022 GROUP 29 </footer>
     </>
   );
 };
