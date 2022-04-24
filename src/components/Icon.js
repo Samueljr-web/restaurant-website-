@@ -3,7 +3,7 @@ import React from 'react'
 const Icon = ({icon}) => {
   return (
     <div className="social-icon">
-      <i class={icon}></i>
+      <i className={icon}></i>
     </div>
   );
 }
