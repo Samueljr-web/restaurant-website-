@@ -11,6 +11,11 @@
     --primary-color: #7e7796;
     --secondary-color: #fff5ec;
 }
+:root{
+--main-color: #30CE8B;
+--primary-color:#7E7796;
+--secondary-color: #FFF5EC;
+}
 body {
     font-family: "Poppins", sans-serif;
     background: var(--secondary-color);
