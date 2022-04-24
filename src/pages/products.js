@@ -4,16 +4,17 @@ import "../styles/products.css";
 
 const Product = () => {
     const [menu, setMenu] = useState([]);
+
     useEffect(() => {
         const options = {
             method: "GET",
             params: { limit: "26", start: "0" },
             headers: {
-                "X-RapidAPI-Host": "yummly2.p.rapidapi.com",
-                "X-RapidAPI-Key":
-                    "e2204bf6c0mshb651e4d02185d6dp144c08jsn613360ede411",
+                "X-RapidAPI-Host": process.env.REACT_APP_RAPIDAPI_HOST,
+                "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
             },
         };
+        console.log(process.env);
 
         const fetchFood = async () => {
             const res = await fetch(
@@ -30,6 +31,7 @@ const Product = () => {
         <section id="product-page">
             <header>
                 <h2>Our Menu</h2>
+                {console.log(menu)}
             </header>
             {menu.length ? (
                 <section className="product__listing">
