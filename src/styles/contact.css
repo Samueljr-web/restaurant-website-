@@ -8,9 +8,6 @@
   margin: 0 auto;
 }
 .form-title {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px;
   margin-bottom: 30px;
 }
 .form-title::after {
@@ -19,7 +16,7 @@
   height: 3px;
   display: block;
   position: relative;
-  background-color: black;
+  background-color: var(--main-color);
   top: -2px;
 }
 .form-subheader {
