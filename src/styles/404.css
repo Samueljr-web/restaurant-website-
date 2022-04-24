@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
 .fundo{
   animation: scales 3s alternate  infinite;
   transform-origin: center;
@@ -55,7 +61,6 @@
 
 
 .main{
-  
   min-height: 600px;
   margin: 0px auto;
   width: auto;
@@ -100,16 +105,15 @@ p {
 	padding: 2rem ;
 }
 
-  .link{
-    text-decoration: none;
-    color:black;
-    position: relative;
-  }
-  .link:hover{
-    color: white;
-    position: relative;
-  }
+@media only screen and (max-width: 500px) {
+  .main{
+    flex-direction: column;
+    max-width: 100%;
+    min-width: fit-content;
+    margin: 0px
 
+  }
+}
 
 @keyframes dash{
    0%, 30%{
