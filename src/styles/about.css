@@ -12,7 +12,6 @@
 }
 
 .about-header {
-    background-color: red;
     height: 70vh;
     background-image: url('../assets/about-img-1.jpg');
     background-size: cover;
@@ -45,8 +44,9 @@
 }
 
 .about-header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.2;
+    border-bottom: 4px solid var(--main-color);
 }
 
 .about-header p {
