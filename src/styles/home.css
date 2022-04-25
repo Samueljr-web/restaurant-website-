@@ -1,5 +1,5 @@
 .home-page{
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
 }
 .hero-section{
     display: flex;
@@ -10,6 +10,7 @@
 .hero-intro {
     padding-top: 3rem;
     font-family: 'Montserrat', sans-serif;
+    z-index: 2;
 }
 .hero-intro h2{
     font-size: 2.5rem;
@@ -23,15 +24,18 @@
     background: var(--main-color);
     width: 20rem;
     height:35rem;
-    border-radius: 10px;
-    transform: translateX(10rem) translateY(-8rem);
+    border-radius: 2px;
+    position: relative;
+    top: -10rem;
+    right: -6rem;
 }
 
 .hero-image img{
     transition: .3s;
     width: 380px;
     height: 380px;
-    transform: translateX(-10rem) translateY(6rem);
+    position: absolute;
+    transform: translateX(-9rem) translateY(6rem);
 }
 .hero-button{
     width:100%;
@@ -70,7 +74,9 @@
 
 @media screen and (max-width: 1050px){
     .hero-image-div{
+        width: 16rem;
         height: 30rem;
+
     }
  .hero-image img{
      width: 250px;
@@ -100,7 +106,8 @@
         margin-top: 24rem;
     }
     .hero-image-div{
-        transform: none;
+        top: 0;
+        right: 0;
         background: none;
     }
    }
