@@ -60,12 +60,12 @@ function Home() {
               className="inner-carousel"
             >
               {images.map((image, index) => {
-                return (
+                return index < 5 ? (
                   <motion.div className="item" key={index}>
                     <img src={image} alt="special offers" />
                     {/* <div class="centered">Centered</div> */}
                   </motion.div>
-                );
+                ) : null;
               })}
             </motion.div>
           </motion.div>
