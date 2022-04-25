@@ -6,8 +6,8 @@ import {
   faInstagram,
   faPinterestP,
 } from "@fortawesome/free-brands-svg-icons";
+import NavBrand from "../../assets/navbrand.png";
 import { Link } from "react-router-dom";
-
 import "./Footer.css";
 
 function Footer() {
@@ -16,7 +16,9 @@ function Footer() {
       <div className="container">
         <div className="top-part">
           <div className="row">
-            <h2>Food City</h2>
+            <div className="brand-logo">
+              <img src={NavBrand} alt="brand logo" />
+            </div>
             <p>It Tastes better</p>
           </div>
 
