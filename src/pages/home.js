@@ -21,8 +21,8 @@ function Home() {
             Discover Restaurant <br /> & Delicious Foods
           </motion.h2>
           <p>
-            Your gastronomical experience with us is our main priority. <br />
-            This is why all of our recipes are always prepared with the freshest
+            Your gastronomical experience with us is our main priority. This is
+            why <br /> all of our recipes are always prepared with the freshest
             ingredients available.
           </p>
           <div className="hero-button">
@@ -63,6 +63,7 @@ function Home() {
                 return (
                   <motion.div className="item" key={index}>
                     <img src={image} alt="special offers" />
+                    {/* <div class="centered">Centered</div> */}
                   </motion.div>
                 );
               })}
