@@ -16,3 +16,7 @@ body {
     background: var(--secondary-color);
     color: #000;
 }
+.btn-link{
+    text-decoration: none;
+    pointer-events: none;
+}

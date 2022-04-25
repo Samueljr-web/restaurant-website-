@@ -1,5 +1,5 @@
 nav {
-  background: var(--secondary-color);
+  background: transparent;
   height: 70px;
   width: 100%;
   display: flex;
@@ -9,6 +9,7 @@ nav {
 }
 
 nav.shadowed{
+    background: var(--secondary-color);
     box-shadow: 2px 0 4px rgba(0,0,0,0.2);
 }
 
