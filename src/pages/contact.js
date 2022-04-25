@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/contact.css";
 import Map from "../assets/map.PNG";
 import Button from "../components/Button";
-import Icon from "../components/Icon";
 import { contactInfo, contactInput } from "../staticData/contactData";
 import ContactInfo from "../components/Contact/ContactInfo";
 import ContactInput from "../components/Contact/ContactInput";
