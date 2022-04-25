@@ -6,6 +6,7 @@ import {
   MdShoppingCart,
   MdContactPage,
 } from "react-icons/md";
+import NavBrand from "../../assets/navbrand.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -22,7 +23,9 @@ function Navbar() {
   return (
     <div>
       <nav className={nav ? "shadowed" : null}>
-        <label>Food City</label>
+        <div className="nav-logo">
+          <img src={NavBrand} alt="logo" />
+        </div>
         <ul>
           <li>
             <NavLink className="link" to="/">

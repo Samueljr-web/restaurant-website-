@@ -13,14 +13,16 @@ nav.shadowed{
     box-shadow: 2px 0 4px rgba(0,0,0,0.2);
 }
 
-nav label {
-  line-height: 70px;
-  font-size: 2rem;
-  font-family: 'PT Sans', sans-serif;
-  padding-left: 2.5rem;
-  color: var(--main-color);
+nav .nav-logo {
+  width: 200px;
+  height: 200px;
+  padding-left: 3rem;
+  margin-top: -1rem;
 }
-
+nav .nav-logo img {
+  width: 100%;
+  height: 100px;
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -45,6 +47,7 @@ nav ul li .active-link {
 nav ul li .active {
   border-bottom: 2px solid var(--main-color);
 }
+
 .menu {
   display: none;
   outline: none;
