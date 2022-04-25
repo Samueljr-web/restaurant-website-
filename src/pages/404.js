@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/404.css";
 import Button from "../components/Button";
-
+import { Link } from "react-router-dom";
  const NotFound =()=>{return(
 
 <div className="main"> 
@@ -55,7 +55,7 @@ import Button from "../components/Button";
         <h1 className="h1-404">404</h1>
         <h2 className="h2-404">Oops.</h2>
         <p className="p-404">The page you are looking for doesn't exist. Click the button below to go back to the homepage.</p>
-        < a class="link" href="/" > <Button name={"Home"} /></a>
+        <Link to="/" > <Button name={"Home"} /></Link>
       </div>
 	</div></div>
     
