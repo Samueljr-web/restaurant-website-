@@ -19,14 +19,22 @@
 .hero-intro  p{
     color: #000;
 }
-
-.hero-image{
-    display: flex;
+.hero-image-div{
+    background: var(--main-color);
+    width: 20rem;
+    height:35rem;
+    border-radius: 10px;
+    transform: translateX(10rem) translateY(-8rem);
 }
+
 .hero-image img{
     transition: .3s;
     width: 380px;
     height: 380px;
+    transform: translateX(-10rem) translateY(6rem);
+}
+.hero-button{
+    width:100%;
 }
 
 .so{
@@ -61,6 +69,9 @@
 }
 
 @media screen and (max-width: 1050px){
+    .hero-image-div{
+        height: 30rem;
+    }
  .hero-image img{
      width: 250px;
      height: 250px;
@@ -83,8 +94,13 @@
         width: 330px;
         height: 330px;
         transition: .3s;
+        transform: none;
     }
     .specialoffers{
         margin-top: 24rem;
+    }
+    .hero-image-div{
+        transform: none;
+        background: none;
     }
    }

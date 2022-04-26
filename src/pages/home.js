@@ -21,22 +21,29 @@ function Home() {
             Discover Restaurant <br /> & Delicious Foods
           </motion.h2>
           <p>
-            Your gastronomical experience with us is our main priority. This is
-            why all of our recipes are always prepared with the freshest
+            Your gastronomical experience with us is our main priority. <br />
+            This is why all of our recipes are always prepared with the freshest
             ingredients available.
           </p>
-          <Link to="/contact">
-            <Button name="Contact Us" />
-          </Link>
+          <div className="hero-button">
+            <Link to="/contact" className="btn-link">
+              <Button name="Contact Us" />
+            </Link>
+          </div>
         </div>
-        <motion.div
-          nitial={{ scale: 0 }}
-          transition={{ delay: 0.1 }}
-          animate={{ scale: [1, 1, 2, 1, 1], rotate: [0, 0, 270, 270, 0] }}
-          className="hero-image"
-        >
-          <img src={Heroimage} alt="hero" />
-        </motion.div>
+        <div className="hero-image-div">
+          <motion.div
+            initial={{ scale: 0 }}
+            transition={{ delay: 0.1 }}
+            animate={{
+              scale: [1, 1, 1.5, 1, 1],
+              rotate: [0, 360, 360, 360, 0],
+            }}
+            className="hero-image"
+          >
+            <img src={Heroimage} alt="hero" />
+          </motion.div>
+        </div>
       </div>
       <div>
         <section className="specialoffers">
