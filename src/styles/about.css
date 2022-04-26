@@ -50,7 +50,7 @@
 }
 
 .about-header p {
-    font-family: 'montserrat' cursive ;
+    font-family: 'montserrat', cursive ;
     font-size: 1rem;
     align-items: center;
 }
@@ -103,7 +103,7 @@
 }
 
 .about-values__title p {
-    font-family: 'montserrat' cursive ;
+    font-family: 'montserrat', cursive ;
     font-size: 3rem;
     color: var(--main-color);
 }
