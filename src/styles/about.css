@@ -53,6 +53,7 @@
     font-family: 'montserrat', cursive ;
     font-size: 1rem;
     align-items: center;
+    margin-top: 15px;
 }
 
 /* About Values Section */
@@ -71,15 +72,11 @@
 .about-values__content {
     border-radius: 5px;
     padding: 3.5rem;
-
-
     display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
     text-align: center;
-
-
     background-color: rgb(255, 245, 245);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
